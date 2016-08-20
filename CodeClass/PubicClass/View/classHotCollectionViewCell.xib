@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="classHotCollectionViewCell" customModule="SwiftMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="115" height="152"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="115" height="152"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PkY-70-VnW">
+                        <rect key="frame" x="20" y="116" width="80" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ara-TF-nID">
+                        <rect key="frame" x="20" y="12" width="80" height="92"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="ODt-oW-YcA"/>
+                            <constraint firstAttribute="width" constant="80" id="tlO-fZ-Zf8"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ODt-oW-YcA"/>
+                                <exclude reference="tlO-fZ-Zf8"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <constraints>
+                <constraint firstItem="PkY-70-VnW" firstAttribute="top" secondItem="ara-TF-nID" secondAttribute="bottom" constant="10" id="0LM-X9-8I2"/>
+                <constraint firstItem="ara-TF-nID" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="4qV-eK-NU3"/>
+                <constraint firstItem="ara-TF-nID" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="ATs-jj-E6u"/>
+                <constraint firstItem="ara-TF-nID" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="Clb-sb-YBb"/>
+                <constraint firstAttribute="bottom" secondItem="PkY-70-VnW" secondAttribute="bottom" constant="10" id="Sqy-Qd-8Ne"/>
+                <constraint firstItem="PkY-70-VnW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="VSo-4H-moo"/>
+                <constraint firstAttribute="trailing" secondItem="ara-TF-nID" secondAttribute="trailing" constant="20" id="WmK-JW-Kmg"/>
+                <constraint firstItem="ara-TF-nID" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="gu3-8b-48a"/>
+                <constraint firstAttribute="trailing" secondItem="PkY-70-VnW" secondAttribute="trailing" constant="20" id="h7g-r9-yif"/>
+                <constraint firstItem="PkY-70-VnW" firstAttribute="top" secondItem="ara-TF-nID" secondAttribute="bottom" constant="10" id="zuY-CI-AJs"/>
+            </constraints>
+            <size key="customSize" width="115" height="152"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ATs-jj-E6u"/>
+                    <exclude reference="gu3-8b-48a"/>
+                    <exclude reference="zuY-CI-AJs"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="collectionCellImg" destination="ara-TF-nID" id="UaX-hB-K0j"/>
+                <outlet property="collectionName" destination="PkY-70-VnW" id="8si-Jo-Gnx"/>
+            </connections>
+            <point key="canvasLocation" x="425.5" y="405"/>
+        </collectionViewCell>
+    </objects>
+</document>

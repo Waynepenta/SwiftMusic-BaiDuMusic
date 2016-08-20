@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="198" id="KGk-i7-Jjw" customClass="recommend1TableViewCell" customModule="SwiftMusic" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="413" height="198"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="413" height="197"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="djr-qW-dKa">
+                        <rect key="frame" x="0.0" y="0.0" width="413" height="197"/>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="djr-qW-dKa" secondAttribute="bottom" id="3fV-WC-jdO"/>
+                    <constraint firstItem="djr-qW-dKa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="K0N-fG-bQZ"/>
+                    <constraint firstItem="djr-qW-dKa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rxe-kK-O0y"/>
+                    <constraint firstAttribute="trailing" secondItem="djr-qW-dKa" secondAttribute="trailing" id="vSO-nO-5rM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="recommendScrollView" destination="djr-qW-dKa" id="E7Q-4d-hFN"/>
+            </connections>
+            <point key="canvasLocation" x="329.5" y="345"/>
+        </tableViewCell>
+    </objects>
+</document>
